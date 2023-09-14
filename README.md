@@ -40,8 +40,24 @@ This project provides three methods for license plate localization:
 
 ### Character Recognition
 This project offers two methods for character recognition:
-1. Transfer Learning with MobileNetV2: Adapts the pre-trained MobileNetV2 model for license plate character recognition.
-2. Custom CNN Model: Trains a custom convolutional neural network model for recognizing characters on license plates.
+1. Custom CNN Model: Trains a custom convolutional neural network model for recognizing characters on license plates.
+2. Transfer Learning with MobileNetV2: Adapts the pre-trained MobileNetV2 model for license plate character recognition.
+
+Method 1 : Custom CNN Procedure
+1. Defines a CNN model architecture suitable for character recognition.
+2. Compiles the model with appropriate loss and optimizer.
+3. Sets up data generators for training and validation datasets.
+4. Trains the model on a dataset containing character images from license plates.
+5. Implements custom callbacks for monitoring training progress and stopping based on criteria.
+
+You can customize the model architecture, hyperparameters, and training process according to your specific dataset and requirements.
+
+Method 2 : Transfer Learning with MobileNetV2
+1. Training a CNN model with MobileNetV2 architecture on a dataset of license plate character images.
+2. Saving the trained model and label encoder.
+3. Recognizing characters on license plates from images using the trained model.
+
+You can customize the model architecture, hyperparameters, and training process according to your specific dataset and requirements.
 
 ## Performance
 The performance of the license plate recognition system may vary depending on the quality of input images, lighting conditions, and other factors. In our evaluation, the system achieves an accuracy of 78% on a benchmark dataset.
